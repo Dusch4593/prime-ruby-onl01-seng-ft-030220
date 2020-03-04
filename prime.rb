@@ -5,12 +5,12 @@ def prime?(number)
   elsif(number == 2)
     return true
   else
-    
+    for i in 2..number
       # our test for primeness
       if(number % i) === 0
         return false
       end
-    
+    end
     return true
   end
 end
