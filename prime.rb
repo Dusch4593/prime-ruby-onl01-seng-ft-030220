@@ -5,7 +5,7 @@ def prime?(number)
   elsif(number == 2)
     return true
   else
-    for i in 2..number
+    for i in 2..(1/number**2)
       # our test for primeness
       if(number % i) === 0
         return false
